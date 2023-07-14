@@ -6,9 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CitiConnect - Real Estate</title>
     <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'>
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
-</head>
-<body>
-    <image src="/assets/under-construction.png"></image>
-</body>
+    <style>
+        body {
+          position: relative;
+          overflow: hidden;
+          height: 100vh;
+        }
+        #bgvid {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          min-width: 100%;
+          min-height: 100%;
+          width: auto;
+          height: auto;
+          z-index: -100;
+          transform: translateX(-50%) translateY(-50%);
+        }
+        .card {
+          position: relative;
+          z-index: 1;
+          max-width: 400px;
+          margin: 0 auto;
+          background-color: rgba(255, 255, 255, 0.8);
+        }
+        .logo {
+          width: 100%;
+          max-width: 200px;
+          margin-bottom: 20px;
+        }
+        </style>
+        </head>
+        <body>
+        <iframe id='bgvid' src='https://www.youtube.com/embed/y2Bh7oh25Jw?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1' frameborder='0' allowfullscreen></iframe>
+        <div class='card text-center'>
+          <div class='card-body'>
+            <img src='/assets/logofinal.png' alt='Logo' class='logo'>
+            <h5 class='card-title'>Under Construction</h5>
+            <p class='card-text'>Our website is currently under construction. We'll be here soon with our new awesome site.</p>
+            <p>For free site viewing book on our facebook page <a href='https://www.facebook.com/CitiConnectph'>@CitiConnectph</a></p>
+          </div>
+        </div>
+        <script src='https://code.jquery.com/jquery-3.5.1.slim.min.js'></script>
+        <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js'></script>
+        </body>
 </html>
